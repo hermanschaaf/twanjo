@@ -1,24 +1,70 @@
-{{set . "title" "Herman Schaaf"}}
-{{template "header.html" .}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Chinese Reader Browser Plugin | Twanjo - Learn Everywhere</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/public/css/base.css">
 </head>
-{{set . "postTitle" "IronZebra"}}
-{{template "base.html" .}}
-                <h1>IronZebra</h1>
-                <h2>Building web applications in Cape Town, Taipei and Tokyo. <a href="{{url "Blog.List" }}" title="Fair warning: It's mostly about boring programming stuff">Read the blog</a></h2>
 
-                <p>I am Herman Schaaf, a web application developer that particularly likes building things in Python, Django, Node.js, JavaScript and, recently, Go.</p>
+<body class="page-index">
+    
+    <nav class="navbar navbar-inverse" role="navigation">
+        <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <span class="navbar-brand" href="#">
+            <a href="/"><img src="/public/images/logo.png"/> <span class="slogan">learn everywhere</span></a>
+<!--             <div class="text">
+                <div class="name"><a href="/">Twanjo</a></div>
+                <div class="slogan">Learn Everywhere</div>
+            </div> -->
+        </span>
+      </div>
 
-                <p>Over the last few years, I have helped build high-traffic web applications in <a title="progr.es - projects and processes, simplified" target="_blank" href="http://progr.es">Cape Town</a>, <a title="Eumakh - KPop Music Video TV" target="_blank" href="http://eumakh.com">Taipei</a> and now, <a title="Gengo - Communicate freely" target="_blank" href="http://gengo.com">Tokyo</a>.</p>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/posts">Blog</a></li>
+      <li><a href="#">Sign In</a></li>
+    </ul>
+      </div>
+      <hr class="main-hr"/>
+    </nav>
 
-                <p>I have a keen interest in languages and I've started several open-source projects related to linguistics: <a href="http://chineselevel.com" target="_blank" title="ChineseLevel - Measure your Chinese reading fluency">ChineseLevel</a>, <a href="http://chinese-ime.com" target="_blank" title="Chinese IME - Write Chinese in a browser with this JavaScript plugin">Chinese IME</a> and <a href="https://github.com/hermanschaaf/mafan" target="_blank" title="Mafan - A toolbelt for working with Chinese in Python">Mafan</a>. I speak Afrikaans at home, English at work, Chinese with friends and study Japanese part-time.</p>
-
-                <p>You can find me at some of the common programmer watering holes, <a title="Herman Schaaf's profile on Github" href="https://github.com/hermanschaaf/">Github</a>, <a title="Herman Schaaf's profile on StackOverflow" href="http://stackoverflow.com/users/445210/herman-schaaf">StackOverflow</a> and <a title="Herman Schaaf's profile on CoderWall" href="https://coderwall.com/hermanschaaf">CoderWall</a></p>
-
-                <hr/>
-
-                {{if .result.ShortID}}<p>You might also like my latest blog post, <a href="{{url "Blog.Show" .result.Category .result.ShortID .result.Slug }}">{{.result.Title}}</a></p>{{end}}
+    <div class="container main-content">
+        <div class="row">
+            <div class="col-sm-6 pull-right">
+                <div class="col-md-10 col-md-offset-1 copy">
+                    <h1>Chinese Reader</h1>
+                    <p>A browser extension for <strong data-content="reading">reading Chinese</strong> content <strong data-content="everywhere">everywhere</strong>: <strong data-content="blogs">blogs</strong>, <strong data-content="facebook">Facebook</strong>, and even <strong data-content="email">email</strong>.</p>
+                    <a href="" class="btn btn-lg btn-success btn-install">Install</a>
+                </div>
+            </div>
+            <div class="col-sm-6 browser hidden-xs">
+                <div class="demo">
+                    <figure>
+                        <img class="img-responsive img-browser" src="/public/images/chrome-browser.png">
+                    </figure>
+                    <div class="demo-content">
+                        <div class="content-blogs">
+                            <div class="col-xs-10 col-xs-offset-1">                            
+                                <h1>我為什麼也不喜歡看新聞</h1>
+                                <p>我不喜歡看新聞的理由其實很簡單：就是新聞跟我沒什麼關係。楊碩也提到了這一點。</p>
+                                <p>今天作者群里還討論了怎麼定義新聞。在我這個非專業的人看來，新聞就是一件被人為選出來讓大家知道和討論的事情。假如哪個記者閑着無聊了，把我們這幾篇文章包裝包裝，然後發表下《眾網民參與網上新聞論戰》，估計我們也能成新聞。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden">
+                    <div class="content-blogs">
+                        <h1>我為什麼也不喜歡看新聞</h1>
+                        <p>我不喜歡看新聞的理由其實很簡單：就是新聞跟我沒什麼關係。楊碩也提到了這一點。</p>
+                        <p>今天作者群里還討論了怎麼定義新聞。在我這個非專業的人看來，新聞就是一件被人為選出來讓大家知道和討論的事情。假如哪個記者閑着無聊了，把我們這幾篇文章包裝包裝，然後發表下《眾網民參與網上新聞論戰》，估計我們也能成新聞。</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-{{template "footer.html" .}}
-
+</body>
+</html>
