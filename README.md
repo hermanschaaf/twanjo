@@ -7,8 +7,7 @@ Twanjo's core code is based on [IronZebra](http://github.com/hermanschaaf/ironze
 
 *********************
 
+| Author  | Herman Schaaf | 
 |---------|---------------|
-| Author  | Herman Schaaf |
 | Date    | 2013          |
 | License | GPLv2         |
-|---------|---------------|
