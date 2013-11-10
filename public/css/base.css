@@ -1,6 +1,131 @@
 body {
     margin-bottom: 40px;
 }
+.navbar-brand {
+    font-size: 2em;
+}
+.navbar-brand a {
+    text-decoration: none;
+}
+.navbar-brand .text {
+    margin-top: -4px;
+/*    margin-left: 60px;*/
+}
+.navbar-brand img {
+    vertical-align: middle;
+}
+.navbar-brand .slogan {
+    font-size: 18px;
+    color: #b0b0b0;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+    font-weight: normal;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+ul.nav {
+    margin-top: 24px;
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+}
+.main-hr {
+    border: 0;
+    border-bottom: 5px solid rgba(0, 0, 0, 0.4);
+    margin: 0;
+    margin-bottom: -5px;
+}
+.page-index {
+  background: url(/public/images/background.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+    .page-index .main-content {
+        margin-top: 80px;
+    }
+}
+.page-index .copy h1, .page-index .copy p, .page-index .copy .btn {
+    font-family: Georgia,Cambria,"Times New Roman",Times,serif;
+}
+.page-index .copy h1 {
+    line-height: 1.25em;
+}
+.page-index .copy p {
+    margin-top: 1em;
+    line-height: 1.5em;
+}
+.page-index .copy strong {
+    cursor: pointer;
+}
+.page-index .copy .btn-install {
+    margin-top: 1em;
+    min-width: 8em;
+}
+.page-index .demo {
+    position: relative;
+}
+.page-index .demo-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8% 4%;
+    z-index: 2;
+    overflow: hidden;
+}
+.page-index .demo-content h1 {
+    font-size: 1.9em;
+    line-height: 1.5em;
+    font-weight: bold;
+}
+
+/* responsive demo classes*/
+@media screen and (min-width: 768px) {
+    .page-index .demo-content {
+        height: 220px;
+    }
+    .page-index .copy h1 {
+        font-size: 28px;
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    .page-index .demo-content {
+        height: 290px;
+    }
+    .page-index .copy {
+        margin-top: 20px;
+    }
+    .page-index .copy h1 {
+        font-size: 36px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .page-index .demo-content {
+        height: 330px;
+    }
+    .page-index .copy {
+        margin-top: 56px;
+    }
+    .page-index .copy h1 {
+        font-size: 56px;
+    }
+}
+
+.page-index .demo-content .content-blogs {
+
+}
+.page-index .browser .img-browser {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+}
+
+.btn-success { border-color: #9c1516; background-color: #b21819; }
+.btn-success:hover { border-color: #831212; background-color: #9c1516; }
+
 h1 {
     font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
     font-size: 36px;
